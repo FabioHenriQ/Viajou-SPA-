@@ -1,1 +1,15 @@
-<p>navbar works!</p>
+<header>
+  <div>
+    <p>Viajou</p>
+  </div>
+  <nav>
+    <ul class="nav__list">
+      <li><a [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['active']" [routerLink]="['/']">Home</a></li>
+      <li><a [routerLinkActive]="['active']" [routerLink]="['/sobre']">Sobre</a></li>
+      <li><a [routerLinkActive]="['active']" [routerLink]="['/contato']">Contato</a></li>
+    </ul>
+  </nav>
+  <div class="header__container_button">
+    <a [routerLink]="['/login']">Login</a>
+  </div>
+</header>
