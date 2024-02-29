@@ -1,6 +1,6 @@
 
 section {
-  height: 100vh;
+  height: 95vh;
 }
 .container__info {
   background-image: url('../../../assets/images/montanhas.jpg');
@@ -12,4 +12,68 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  border-radius: 0 0 20px 20px;
+  color: var(--colorPrimary);
+  text-align: center;
 }
+.container__info h1 {
+  font-family: 'Kanit', sans-serif;
+  max-width: 65%;
+  text-shadow: 2px 3px 10px var(--colorSecondary);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+.container__info p {
+  text-shadow: 2px 3px 10px var(--colorSecondary);
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.options__container_links {
+  display: flex;
+  width: 48%;
+  height: 38%;
+  padding: 4px;
+
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba(44, 44, 46, 0.37);
+  -webkit-backdrop-filter: blur( 1px );
+  backdrop-filter: blur( 1px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.options__container_links__option {
+  height: 100%;
+  width: 100%;
+}
+.options__container_links__option button {
+  font-size: 1.1rem;
+  color: var(--colorPrimary);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  background: none;
+  border: 0;
+}
+.options__container_links__option:not(:first-child) > button {
+  border-left: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.button_search {
+  width: 100%;
+  text-decoration: none;
+  color: var(--colorSecondary);
+  background-color: var(--colorPrimary);
+  border-radius: 15px;
+  padding: 7px;
+}
+

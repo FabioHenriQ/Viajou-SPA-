@@ -1,0 +1,17 @@
+* {
+  animation-name: showContainerAnimation;
+  animation-duration: .2s;
+  animation-fill-mode: both;
+  z-index: 0.1;
+}
+
+@keyframes showContainerAnimation{
+  from{
+    margin-top: -20px;
+    opacity: 0;
+  }
+  to{
+    margin-top: 0px;
+    opacity: 1;
+  }
+}

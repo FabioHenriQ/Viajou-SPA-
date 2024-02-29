@@ -1,22 +1,52 @@
 <main>
   <section class="container__info">
-    <h1>Viagens incriveis e acessiveis é aqui!</h1>
+    <h1>Viagens incríveis e acessíveis é aqui!</h1>
     <p>Explore lugares inacreditaveis por um preço baixo</p>
+
+    <div class="options">
+      <div class="options__container_links">
+        <div class="options__container_links__option">
+          <button (click)="ToggleOptions(1)">Datas</button>
+          @if (showContainer1) {
+            <app-options>
+              <a [routerLink]="['/contato']">Datas</a>
+            </app-options>
+          }
+        </div>
+        <div class="options__container_links__option">
+          <button (click)="ToggleOptions(2)">Preços</button>
+          @if (showContainer2) {
+            <app-options>
+              <a [routerLink]="['/contato']">Preços</a>
+            </app-options>
+          }
+        </div>
+        <div class="options__container_links__option">
+          <button (click)="ToggleOptions(3)">Locais</button>
+          @if (showContainer3) {
+            <app-options>
+              <a [routerLink]="['/contato']">Locais</a>
+            </app-options>
+          }
+        </div>
+        <a href="" class="button_search">Procurar</a>
+      </div>
+    </div>
   </section>
 
-  <section class="container__info">
+  <section class="container__recommend">
     <subtitle subtitle="Olá kk" [fontSize]="'30px'"></subtitle>
   </section>
 
-  <section class="container__info">
+  <section class="container__benefits">
     <subtitle subtitle="Olá kk" [fontSize]="'40px'"></subtitle>
   </section>
 
-  <section class="container__info">
+  <section class="container__otherLocal">
     <subtitle subtitle="Olá kk" [fontSize]="'20px'"></subtitle>
   </section>
 
-  <section class="container__info">
+  <section class="container__memories">
     <subtitle subtitle="Olá kk" [fontSize]="'100px'"></subtitle>
   </section>
 </main>
