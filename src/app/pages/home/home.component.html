@@ -4,12 +4,13 @@
     <p>Explore lugares inacreditaveis por um preço baixo</p>
 
     <div class="options">
-      <div class="options__container_links">
+      <div class="options__container_links" [style.border-radius]="borderRadius">
         <div class="options__container_links__option">
           <button (click)="ToggleOptions(1)">Datas</button>
           @if (showContainer1) {
             <app-options>
-              <a [routerLink]="['/contato']">Datas</a>
+              <a [routerLink]="['/contato']">Melhores horarios</a>
+              <a [routerLink]="['/contato']">Da</a>
             </app-options>
           }
         </div>
@@ -39,14 +40,14 @@
   </section>
 
   <section class="container__benefits">
-    <subtitle subtitle="Olá kk" [fontSize]="'40px'"></subtitle>
+    <subtitle subtitle="a" [fontSize]="'40px'"></subtitle>
   </section>
 
   <section class="container__otherLocal">
-    <subtitle subtitle="Olá kk" [fontSize]="'20px'"></subtitle>
+    <subtitle subtitle="b" [fontSize]="'20px'"></subtitle>
   </section>
 
   <section class="container__memories">
-    <subtitle subtitle="Olá kk" [fontSize]="'100px'"></subtitle>
+    <subtitle subtitle="v" [fontSize]="'100px'"></subtitle>
   </section>
 </main>

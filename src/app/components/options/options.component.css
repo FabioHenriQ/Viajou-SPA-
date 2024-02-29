@@ -5,13 +5,25 @@
   z-index: 0.1;
 }
 
+.container__link_options {
+  display: flex;
+  flex-direction: column;
+
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba(44, 44, 46, 0.37);
+  -webkit-backdrop-filter: blur( 1px );
+  backdrop-filter: blur( 1px );
+  border-radius: 0 0 10px 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
 @keyframes showContainerAnimation{
   from{
-    margin-top: -20px;
+    margin-top: -10px;
     opacity: 0;
   }
   to{
-    margin-top: 0px;
+    margin-top: 5px;
     opacity: 1;
   }
 }

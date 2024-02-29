@@ -14,6 +14,7 @@ export class HomeComponent {
   showContainer1: boolean = false;
   showContainer2: boolean = false;
   showContainer3: boolean = false;
+  borderRadius: string = '20px';
 
   ToggleOptions(option: number): void {
     switch (option) {
@@ -45,6 +46,12 @@ export class HomeComponent {
         this.showContainer2 = false;
         this.showContainer1 = false;
         break;
+    }
+
+    if(this.showContainer1){
+      this.borderRadius = '20px 20px 20px 4px';
+    }else{
+      this.borderRadius = '20px';
     }
   }
 }
